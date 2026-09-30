@@ -132,4 +132,7 @@
   <data name="TIPO_PAGAMENTO" xml:space="preserve">
     <value>O pagamento deve ser um tipo válido.</value>
   </data>
+  <data name="DESPESA_NAO_ENCONTRADA" xml:space="preserve">
+    <value>Despesa não encontrada</value>
+  </data>
 </root>

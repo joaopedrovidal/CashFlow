@@ -13,7 +13,7 @@ public class CultureMilddleware
     public async Task Invoke(HttpContext context)
     {
         var supportedCulture = CultureInfo.GetCultures(CultureTypes.AllCultures).ToList();
-            
+
         var requestedCulture = context.Request.Headers.AcceptLanguage.FirstOrDefault();
 
         var cultureInfo = new CultureInfo("pt-BR");
@@ -21,6 +21,7 @@ public class CultureMilddleware
         if (string.IsNullOrWhiteSpace(requestedCulture) == false && supportedCulture.Exists(l => l.Name.Equals(requestedCulture)))
         {
             cultureInfo = new CultureInfo(requestedCulture);
+        }
 
         CultureInfo.CurrentCulture = cultureInfo;
         CultureInfo.CurrentUICulture = cultureInfo;

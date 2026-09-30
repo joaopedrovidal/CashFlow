@@ -70,6 +70,15 @@ namespace CashFlow.Exception {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Despesa não encontrada.
+        /// </summary>
+        public static string DESPESA_NAO_ENCONTRADA {
+            get {
+                return ResourceManager.GetString("DESPESA_NAO_ENCONTRADA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Erro desconhecido.
         /// </summary>
         public static string ERRO_DESCONHECIDO {
